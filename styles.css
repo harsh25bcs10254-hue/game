@@ -1,0 +1,24 @@
+:root {
+  color-scheme: dark;
+  --ink: #111827;
+  --muted: #9ba7bb;
+  --gold: #e7bd78;
+  --line: rgba(209, 190, 151, .22);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; background: radial-gradient(ellipse at 50% 10%, #202a3d 0%, #111827 55%, #090d16 100%); color: #f1e8d7; font-family: Georgia, 'Times New Roman', serif; }
+body { display: flex; justify-content: center; align-items: flex-start; padding: 22px 16px 30px; }
+.shell { width: min(1120px, 100%); }
+.topbar { height: 44px; display: flex; justify-content: space-between; align-items: center; padding: 0 4px 12px; color: #d7c9ad; letter-spacing: .13em; font: 11px/1.2 ui-monospace, SFMono-Regular, Consolas, monospace; }
+.brand { display:flex; align-items:center; gap:10px; color:#f2d7a7; font-weight:700; }
+.brand-mark { font-size:18px; color:#e5b96f; text-shadow:0 0 18px rgba(238,192,116,.7); }
+.top-note { color:#8592a9; letter-spacing:.05em; font: italic 13px Georgia,serif; }
+.sound-toggle { background:transparent; color:#b8c4d6; border:1px solid var(--line); padding:7px 10px; border-radius:4px; font:10px ui-monospace,monospace; letter-spacing:.08em; cursor:pointer; }
+.sound-toggle:hover { border-color:#dfbd7e; color:#f4d8a6; }
+.game-frame { position:relative; width:100%; aspect-ratio:1120 / 650; border:1px solid rgba(217,190,139,.4); border-radius:7px; overflow:hidden; box-shadow:0 22px 70px rgba(0,0,0,.5), 0 0 35px rgba(91,130,164,.13), inset 0 0 0 3px rgba(14,20,33,.8); background:#101827; }
+canvas { display:block; width:100%; height:100%; image-rendering:auto; cursor:crosshair; outline:none; }
+.frame-glow { pointer-events:none; position:absolute; inset:0; box-shadow:inset 0 0 70px rgba(7,11,18,.45), inset 0 0 0 1px rgba(255,232,182,.12); }
+.bottom-bar { display:flex; flex-wrap:wrap; gap:9px 19px; justify-content:center; align-items:center; padding:14px 5px 5px; color:#96a1b3; font:10px ui-monospace,monospace; letter-spacing:.06em; }
+kbd { display:inline-block; min-width:18px; padding:3px 5px; margin-left:4px; text-align:center; border:1px solid rgba(203,190,160,.35); border-bottom-width:2px; border-radius:3px; color:#e5d4b3; background:rgba(255,255,255,.045); font:10px ui-monospace,monospace; }
+.tiny-note { text-align:center; margin:8px 0 0; font:italic 12px Georgia,serif; color:#69768b; }
+@media (max-width:650px) { body {padding:8px 6px 20px;} .topbar {height:38px;} .top-note {display:none;} .bottom-bar {gap:7px 10px; font-size:9px;} }

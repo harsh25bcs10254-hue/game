@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101522" />
+  <title>The Shadow Architect</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">✦</span><span>THE SHADOW ARCHITECT</span></div>
+      <div class="top-note">A puzzle game about light, shape &amp; possibility</div>
+      <button id="soundToggle" class="sound-toggle" aria-label="Toggle sound">♪ SOUND ON</button>
+    </header>
+    <section class="game-frame" aria-label="The Shadow Architect game">
+      <canvas id="game" width="1120" height="650" aria-label="Game canvas. Use the keyboard and mouse to play."></canvas>
+      <div class="frame-glow"></div>
+    </section>
+    <footer class="bottom-bar">
+      <span>MOVE <kbd>A</kbd><kbd>D</kbd> / <kbd>←</kbd><kbd>→</kbd></span>
+      <span>JUMP <kbd>SPACE</kbd></span>
+      <span>DRAG LIGHTS &amp; OBJECTS</span>
+      <span>ROTATE <kbd>Q</kbd><kbd>E</kbd></span>
+      <span>FIELD NOTES <kbd>H</kbd></span>
+      <span>PAUSE <kbd>ESC</kbd></span>
+    </footer>
+    <p class="tiny-note">Made to be explored. The room gives clues, not instructions.</p>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

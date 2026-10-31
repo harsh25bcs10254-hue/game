@@ -1,0 +1,12 @@
+{
+  "name": "the-shadow-architect",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A three-chamber browser puzzle adventure about manipulating light and shadows.",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "check": "node --check game.js && node --check server.js",
+    "test": "node sandbox-test.js"
+  }
+}
